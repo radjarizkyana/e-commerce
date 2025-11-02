@@ -1,13 +1,11 @@
-// Login & Register simulasi sederhana
-
 document.addEventListener("DOMContentLoaded", () => {
   const loginForm = document.getElementById("loginForm");
   const registerForm = document.getElementById("registerForm");
 
   // Dummy akun
   const dummyAccounts = [
-    { email: "admin@fashionify.com", password: "admin123", role: "admin" },
-    { email: "seller@fashionify.com", password: "seller123", role: "penjual" },
+    { email: "admin@gmail.com", password: "admin123", role: "admin" },
+    { email: "penjual@gmail.com", password: "penjual123", role: "penjual" },
   ];
 
   // Register user (pembeli)
@@ -24,7 +22,10 @@ document.addEventListener("DOMContentLoaded", () => {
         return;
       }
 
-      localStorage.setItem(`user_${email}`, JSON.stringify({ name, email, password: pass, role: "pembeli" }));
+      localStorage.setItem(
+        `user_${email}`,
+        JSON.stringify({ name, email, password: pass, role: "pembeli" })
+      );
       alert("Akun berhasil dibuat! Silakan login.");
       window.location.href = "login.html";
     });
@@ -37,14 +38,23 @@ document.addEventListener("DOMContentLoaded", () => {
       const email = document.getElementById("email").value;
       const pass = document.getElementById("password").value;
 
-      const dummy = dummyAccounts.find((u) => u.email === email && u.password === pass);
+      // Cek dummy akun (admin & penjual)
+      const dummy = dummyAccounts.find(
+        (u) => u.email === email && u.password === pass
+      );
       if (dummy) {
         localStorage.setItem("currentUser", JSON.stringify(dummy));
         alert(`Login berhasil sebagai ${dummy.role}`);
-        window.location.href = "landingPage.html";
+
+        if (dummy.role === "admin") {
+          window.location.href = "";
+        } else if (dummy.role === "penjual") {
+          window.location.href = "../Dashboard Penjual/index.html";
+        }
         return;
       }
 
+      // Cek akun pembeli dari localStorage
       const user = localStorage.getItem(`user_${email}`);
       if (!user) {
         alert("Akun tidak ditemukan. Silakan daftar terlebih dahulu.");
@@ -59,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       localStorage.setItem("currentUser", JSON.stringify(data));
       alert(`Login berhasil sebagai ${data.role}`);
-      window.location.href = "landingPage.html";
+      window.location.href = "../Dashboard Pembeli/index.html";
     });
   }
 
