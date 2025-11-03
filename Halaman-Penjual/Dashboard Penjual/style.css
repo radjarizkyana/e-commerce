@@ -14,7 +14,7 @@ body{ background:var(--cream); color:#222; }
     border-bottom:1px solid var(--border);
 }
 .brand{
-    color:var(--navy); font-weight:800; letter-spacing:0.5px;
+    color:#007bff; font-weight:800; letter-spacing:0.5px;
 }
 .search-pill{
     background:#fff; border:1px solid var(--border);

@@ -10,7 +10,7 @@
 body{ background:var(--cream); color:#222; }
 
 .topbar{ background:var(--cream); border-bottom:1px solid var(--border); }
-.brand{ color:var(--navy); font-weight:800; letter-spacing:.5px; }
+.brand{ color:#007bff; font-weight:800; letter-spacing:.5px; }
 
 .search-pill{
   background:#fff; border:1px solid var(--border);
