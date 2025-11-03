@@ -47,7 +47,7 @@ document.addEventListener("DOMContentLoaded", () => {
         alert(`Login berhasil sebagai ${dummy.role}`);
 
         if (dummy.role === "admin") {
-          window.location.href = "";
+          window.location.href = "../Halaman Admin/index.html";
         } else if (dummy.role === "penjual") {
           window.location.href = "../Dashboard Penjual/index.html";
         }
