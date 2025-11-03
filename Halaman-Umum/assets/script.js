@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (dummy.role === "admin") {
           window.location.href = "../Halaman Admin/index.html";
         } else if (dummy.role === "penjual") {
-          window.location.href = "../Dashboard Penjual/index.html";
+          window.location.href = "../Halaman-Penjual/Dashboard Penjual/index.html";
         }
         return;
       }
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       localStorage.setItem("currentUser", JSON.stringify(data));
       alert(`Login berhasil sebagai ${data.role}`);
-      window.location.href = "../Dashboard Pembeli/index.html";
+      window.location.href = "../Halaman-Pembeli/Dashboard Pembeli/index.html";
     });
   }
 
