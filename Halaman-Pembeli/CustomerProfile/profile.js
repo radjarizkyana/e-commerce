@@ -70,7 +70,7 @@ document.addEventListener('DOMContentLoaded', () => {
   logoutBtn.addEventListener('click', () => {
     if (confirm('Anda yakin ingin logout?')) {
       try { localStorage.removeItem('Profile'); } catch(e){}
-      window.location.href = 'index.html';
+      window.location.href = '../../Halaman-Umum/login.html';
     }
   });
   try {

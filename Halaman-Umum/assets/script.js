@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
       localStorage.setItem("currentUser", JSON.stringify(data));
       alert(`Login berhasil sebagai ${data.role}`);
-      window.location.href = "../Dashboard Pembeli/index.html";
+      window.location.href = "../Halaman-Pembeli/Dashboard Pembeli/index.html";
     });
   }
 
