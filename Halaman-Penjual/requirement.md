@@ -5,4 +5,4 @@ Halaman Penjual
 •Monitoring Pesanan
 •Detail Pesanan
 •Riwayat Transaksi
-•Laporan Penjualan Bulanan
+•Laporan Penjualan Bulanan.
