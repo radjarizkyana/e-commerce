@@ -49,7 +49,7 @@ document.addEventListener("DOMContentLoaded", () => {
         if (dummy.role === "admin") {
           window.location.href = "../Halaman Admin/index.html";
         } else if (dummy.role === "penjual") {
-          window.location.href = "../Dashboard Penjual/index.html";
+          window.location.href = "../Halaman-Penjual/Dashboard Penjual/index.html";
         }
         return;
       }
