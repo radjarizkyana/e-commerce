@@ -1,0 +1,72 @@
+:root{
+  --cream:#F5F0E6;
+  --navy:#0E2A47;
+  --navyText:#1A365D;
+  --softGray:#ECE9E2;
+  --border:#D8D5D0;
+  --orange:#E94E1B;
+}
+
+body{ background:var(--cream); color:#222; }
+
+.topbar{ background:var(--cream); border-bottom:1px solid var(--border); }
+.brand{ color:#007bff; font-weight:800; letter-spacing:.5px; }
+
+.search-pill{
+  background:#fff; border:1px solid var(--border);
+  border-radius:2rem; padding:8px 16px;
+  box-shadow:0 4px 0 rgba(0,0,0,.12);
+}
+.search-pill input{ border:none; outline:none; width:100%; }
+
+.nav-icon{
+  width:40px; height:40px; border-radius:50%;
+  display:flex; align-items:center; justify-content:center;
+  background:#fff; border:1px solid var(--border);
+  box-shadow:0 4px 0 rgba(0,0,0,.12); color:var(--navy);
+  text-decoration:none;
+}
+.nav-icon:hover{ background:#fafafa; }
+
+.page{ max-width:1300px; margin:24px auto; padding:0 12px; }
+
+.sidebar{
+  background:#fff; border:1px solid var(--border);
+  border-radius:16px; padding:12px; box-shadow:0 4px 0 rgba(0,0,0,.12);
+}
+.sidebar .title{ font-weight:700; font-size:1.2rem; color:#222; padding:8px 12px; }
+.menu a{
+  display:block; text-decoration:none; color:#222;
+  padding:10px 12px; border-radius:8px; margin-bottom:6px;
+  background:#f4f2ee;
+}
+.menu a.active{ background:var(--navy); color:#fff; font-weight:600; }
+
+.card-like{
+  background:#fff; border:1px solid var(--border);
+  border-radius:16px; padding:16px; box-shadow:0 4px 0 rgba(0,0,0,.12);
+}
+.page-title{ color:var(--navyText); font-weight:800; }
+
+.btn-orange{
+  background:var(--orange); border:none; color:#fff; font-weight:700;
+  border-radius:12px; padding:10px 18px; box-shadow:0 4px 0 rgba(0,0,0,.2);
+}
+.btn-orange:hover{ filter:brightness(.95); }
+
+table thead th{ color:#666; font-weight:600; }
+
+.status-badge{
+  border:1px solid; border-radius:999px; padding:2px 8px; font-size:.75rem; font-weight:600;
+}
+.status-active{ background:#e6f4ff; color:#0A58CA; border-color:#9ec5fe; }
+.status-inactive{ background:#fff3cd; color:#997404; border-color:#ffe69c; }
+
+.action-btn{
+  width:34px; height:34px; border-radius:10px; border:1px solid var(--border);
+  display:inline-flex; align-items:center; justify-content:center; background:#fff;
+}
+.action-btn:hover{ background:#f7f7f7; }
+.img-thumb{
+  width:48px; height:48px; object-fit:cover; border-radius:8px; border:1px solid var(--border);
+}

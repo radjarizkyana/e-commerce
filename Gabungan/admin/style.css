@@ -1,0 +1,167 @@
+* {
+ margin: 0;
+ padding: 0;
+ box-sizing: border-box;
+ font-family: 'Plus Jakarta Sans', sans-serif;
+}
+
+body {
+ background-color: #f8f1e8; /* krem lembut */
+ color: #333;
+}
+
+.admin-container {
+ display: flex;
+ height: 100vh;
+}
+
+/* Sidebar */
+.sidebar {
+ width: 250px;
+ background-color: #ffffff;
+ padding: 25px 20px;
+ display: flex;
+ flex-direction: column;
+ box-shadow: 4px 0 15px rgba(0, 0, 0, 0.05);
+}
+
+.logo {
+ font-weight: 700;
+ font-size: 22px;
+ color: #f08a5d;
+ text-align: center;
+ margin-bottom: 40px;
+}
+
+.menu {
+  list-style: none;
+}
+
+.menu li {
+ display: flex;
+ align-items: center;
+ gap: 10px;
+ padding: 12px 16px;
+ border-radius: 8px;
+ color: #555;
+ cursor: pointer;
+ transition: all 0.3s ease;
+ font-weight: 500;
+}
+
+.menu li:hover,
+.menu li.active {
+ background-color: #f08a5d;
+ color: #fff;
+}
+
+/* Main */
+.main-content {
+ flex: 1;
+ padding: 30px 40px;
+ background-color: #f8f1e8;
+ overflow-y: auto;
+}
+
+.topbar {
+display: flex;
+justify-content: space-between;
+ align-items: center;
+ margin-bottom: 30px;
+}
+
+.topbar h1 {
+ font-size: 24px;
+ font-weight: 600;
+ color: #333;
+}
+
+.admin-profile {
+ display: flex;
+ align-items: center;
+gap: 10px;
+}
+
+.admin-profile img {
+width: 40px;
+ height: 40px;
+ border-radius: 50%;
+}
+
+/* Cards */
+.cards {
+display: grid;
+ grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+gap: 20px;
+margin-bottom: 40px;
+}
+
+.card {
+ background-color: #fff;
+ border-radius: 18px;
+padding: 20px;
+ box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+ display: flex;
+ align-items: center;
+ gap: 15px;
+ transition: transform 0.2s ease;
+}
+
+.card:hover {
+ transform: translateY(-5px);
+}
+
+.card .icon {
+ background-color: #f08a5d;
+ color: #fff;
+padding: 12px;
+border-radius: 12px;
+ font-size: 18px;
+}
+
+.card h3 {
+ font-size: 15px;
+ color: #666;
+ margin-bottom: 5px;
+}
+
+.card p {
+ font-size: 20px;
+ font-weight: 600;
+ color: #333;
+}
+
+/* Activity Table */
+.activity-section {
+ background-color: #fff;
+ border-radius: 18px;
+ padding: 25px;
+ box-shadow: 0 3px 15px rgba(0, 0, 0, 0.08);
+}
+
+.activity-section h2 {
+ margin-bottom: 20px;
+ font-size: 18px;
+ color: #333;
+}
+
+.activity-section table {
+ width: 100%;
+ border-collapse: collapse;
+}
+
+.activity-section th, 
+.activity-section td {
+ text-align: left;
+ padding: 12px 10px;
+ font-size: 15px;
+}
+
+.activity-section thead {
+ background-color: #f8f1e8;
+ color: #444;
+}
+
+.activity-section tbody tr:nth-child(even) {
+ background-color: #faf6f2;
+}
